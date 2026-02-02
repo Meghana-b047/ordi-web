@@ -4,6 +4,7 @@ import React, { useRef, useState, MouseEvent } from "react";
 import Link from "next/link";
 import { motion, useScroll, useMotionValueEvent } from "framer-motion";
 import { cn } from "@/lib/utils";
+import SearchBar  from "./global_search_bar/searchbar"
 
 const navLinks = [
   { name: "Home", href: "/" },
@@ -64,6 +65,11 @@ export function Navbar() {
             {link.name}
           </MagneticLink>
         ))}
+      </div>
+
+      {/* Search Bar */}
+      <div className="flex-1 max-w-md">
+        <SearchBar/>
       </div>
 
       {/* Mobile Menu Button (Placeholder) */}
