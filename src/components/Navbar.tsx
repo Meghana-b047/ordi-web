@@ -66,8 +66,6 @@ export function Navbar() {
           </MagneticLink>
         ))}
       </div>
-
-      {/* Search Bar */}
       <div>
         <SearchBar/>
       </div>
